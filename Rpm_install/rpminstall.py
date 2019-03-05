@@ -114,7 +114,7 @@ def db_init():     #初始化数据库
         exit('[FATAL]:退出安装程序...')
     cmd_start = "su - postgres -c 'pg_ctl -l logfile start' >/dev/null"
     int_start = os.system(cmd_start)
-    if int_start:
+    if int_start == 0:
         print "[INFO] 成功启动数据库"
         print "[INFO] PostgreSQL数据库安装成功"
     else:

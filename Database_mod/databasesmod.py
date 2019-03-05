@@ -76,7 +76,7 @@ def basic_parameter():
     print "[INFO] 正在配置数据库基本参数..."
     postgres_conf = pgdata_path+"/postgresql.auto.conf"
     pg_conf = open(postgres_conf,"a")
-    pg_conf.write("wal_level = "+wal_level)
+    pg_conf.write("\nwal_level = "+wal_level)
     pg_conf.close()
     return
 

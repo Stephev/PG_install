@@ -27,7 +27,7 @@ def pg_install():
 def databa_mod():
     database.connect_mod()
     database.log_strategy()
-    basic_parameter()
+    database.basic_parameter()
     database.restart_db()
     return
 
